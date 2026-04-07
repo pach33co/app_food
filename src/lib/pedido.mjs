@@ -1,14 +1,16 @@
+import { statusPedido } from "../enums/status_perfil.mjs";
+
 export class Pedido {
-    constructor(id=0, clienteId=0, entregadorId=0, statusPedido="", total=0, criadoEm="", avaliacaoEstabelecimento=0, avaliacaoEntregador=0) {
+    constructor(id = 0, clienteId = 0, entregadorId = 0, status = statusPedido.ABERTO, total = 0, criadoEm = "", avaliacaoEstabelecimento = 0, avaliacaoEntregador = 0) {
         this.id = id;
         this.clienteId = clienteId;
         this.entregadorId = entregadorId;
-        this.statusPedido = statusPedido;
+        this.status = status;
         this.total = total;
         this.criadoEm = criadoEm;
         this.avaliacaoEstabelecimento = avaliacaoEstabelecimento;
         this.avaliacaoEntregador = avaliacaoEntregador;
-    } 
+    }
 
     getId() {
         return this.id;
@@ -31,11 +33,11 @@ export class Pedido {
         this.entregadorId = entregadorId;
     }
 
-    getStatusPedido() {
-        return this.statusPedido;
+    getStatus() {
+        return this.status;
     }
-    setStatusPedido(statusPedido) {
-        this.statusPedido = statusPedido;
+    setStatusPedido(status) {
+        this.status = status;
     }
 
     getTotal() {

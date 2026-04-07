@@ -1,5 +1,5 @@
 export class Estabelecimento {
-    constructor(id=0, avaliacaoGeral=0, nome="", telefone="", endereco="", aberto=false) {
+    constructor(id = 0, avaliacaoGeral = 0, nome = "", telefone = "", endereco = "", aberto = false) {
         this.id = id;
         this.avaliacaoGeral = avaliacaoGeral;
         this.nome = nome;

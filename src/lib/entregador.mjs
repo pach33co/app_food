@@ -1,5 +1,7 @@
+import { statusVeiculo } from "../enums/status_veiculo.mjs";
+
 export class Entregador {
-    constructor(id=0, avaliacaoGeral=0, nome="", telefone="", veiculo="", disponivel=false) {
+    constructor(id = 0, avaliacaoGeral = 0, nome = "", telefone = "", veiculo = statusVeiculo.MOTO, disponivel = false) {
         this.id = id;
         this.avaliacaoGeral = avaliacaoGeral;
         this.nome = nome;

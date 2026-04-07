@@ -1,5 +1,5 @@
 export class Cardapio {
-    constructor(id=0, estabelecimentoId=0, nome="", descricaoProduto="", categoria="", preco=0, disponivel=false) {
+    constructor(id = 0, estabelecimentoId = 0, nome = "", descricaoProduto = "", categoria = "", preco = 0, disponivel = false) {
         this.id = id;
         this.estabelecimentoId = estabelecimentoId;
         this.nome = nome;
